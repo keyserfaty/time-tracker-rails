@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts, skip: [:registrations]
   devise_for :remove_tables
   devise_for :add_type_to_users
   devise_for :users
