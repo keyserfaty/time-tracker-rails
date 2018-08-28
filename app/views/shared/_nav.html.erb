@@ -1,11 +1,11 @@
 <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active" href="#">
+    <a class="nav-link <%= active?(root_path) %>" href="#">
     <%= link_to "Home", root_path %>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">
+    <a class="nav-link <%= active?(posts_path) %>" href="#">
       <%= link_to "Time entries", posts_path %>
     </a>
   </li>
