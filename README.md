@@ -16,3 +16,7 @@ This is me testing how to do a big app in rails.
 
 ## UI:
 Bootstrap -> formatting
+
+
+### Run tests
+`rspec`
