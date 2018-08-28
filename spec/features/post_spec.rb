@@ -60,14 +60,24 @@ describe 'navigate' do
     describe "edition" do
       before do
         @post = create(:post)
-        visit posts_path
       end
       
       it "can be reached by clickin edit" do
-
+        visit posts_path
         click_link("post_#{@post.id}")
 
         expect(page.status_code).to eq(200)
+      end
+
+      it "can be edited" do
+        visit edit_post_path(@post)
+
+        fill_in 'post[date]', with: Date.today
+        fill_in 'post[rationale]', with: "Some updated content"
+
+        click_on 'Save'
+
+        expect(page).to have_content("Some updated content")
       end
     end
   end
