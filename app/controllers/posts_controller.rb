@@ -23,6 +23,10 @@ class PostsController < ApplicationController
   def show
   end
 
+  def edit
+    @post = set_post
+  end
+
   private
 
   def post_params

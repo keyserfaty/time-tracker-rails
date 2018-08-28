@@ -56,5 +56,18 @@ describe 'navigate' do
 
       expect(User.last.posts.last.rationale).to eq("User_Association")
     end
+
+    describe "edition" do
+      before do
+        @post = create(:post)
+        visit posts_path
+      end
+
+      it "can be reached by clickin edit" do
+        click_link "Edit"
+
+        expect(page.status_code).to eq(200)
+      end
+    end
   end
 end

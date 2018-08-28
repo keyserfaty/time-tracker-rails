@@ -18,6 +18,9 @@
 						<th>
 							Content
 						</th>
+            <th>
+							Content
+						</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -34,6 +37,9 @@
               </td>
               <td>
                 <%= post.rationale %>
+              </td>
+              <td>
+                <%= link_to "Edit", edit_post_path(post) %>
               </td>
             </tr>
           <% end %>
