@@ -31,7 +31,6 @@ end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-
 gem "devise", "~> 4.5"
-
 gem "bootstrap-sass", "~> 3.3"
+gem "factory_bot_rails", "~> 4.11"
