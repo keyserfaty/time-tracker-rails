@@ -5,7 +5,7 @@ This is me testing how to do a big app in rails.
 ## Models:
 - Post -> data:data rationale:text
 x User -> Devise
-- AdminUser -> STI
+x AdminUser -> STI
 
 ## Features:
 - Approval Workflow.
