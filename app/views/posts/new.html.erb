@@ -1,1 +1,7 @@
-<h1>Posts</h1>
+<h1>Create post</h1>
+
+<%= form_for @post do |f| %>
+  <%= f.date_field :date %>
+  <%= f.text_area :rationale %>
+  <%= f.submit 'Save' %>
+<% end %>
