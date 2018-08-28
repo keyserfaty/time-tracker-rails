@@ -27,6 +27,16 @@ describe 'navigate' do
 
       expect(page).to have_content(/Some content|Some other content/)
     end
+
+    it 'has a delete button' do
+      post = create(:post)
+      
+      visit posts_path
+
+      click_link("delete_post_#{post.id}")
+
+      expect(page.status_code).to eq(200)
+    end
   end
 
   describe 'root' do

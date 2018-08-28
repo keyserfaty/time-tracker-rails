@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   def index
     @posts = Post.all
@@ -28,10 +28,15 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      redirect_to @post, notice: 'Your post was updated succesfully' # just like that redirects the the view of the post just created
+      redirect_to @post, notice: 'Your post was updated succesfully'
     else
       render :edit # this variables stand for the views itselfs
     end
+  end
+
+  def destroy
+    @post.delete
+    redirect_to posts_path, notice: 'Your post was deleted succesfully' 
   end
 
   private

@@ -19,7 +19,7 @@
 							Content
 						</th>
             <th>
-							Content
+							Optiones
 						</th>
 					</tr>
 				</thead>
@@ -40,6 +40,8 @@
               </td>
               <td>
                 <%= link_to "Edit", edit_post_path(post), id: "post_#{post.id}" %>
+
+                <%= link_to "Delete", post_path(post), method: :delete, id: "delete_post_#{post.id}" %>
               </td>
             </tr>
           <% end %>
