@@ -4,7 +4,7 @@ This is me testing how to do a big app in rails.
 
 ## Models:
 - Post -> data:data rationale:text
-- User -> Devise
+x User -> Devise
 - AdminUser -> STI
 
 ## Features:
