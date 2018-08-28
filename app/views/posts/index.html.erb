@@ -39,7 +39,7 @@
                 <%= post.rationale %>
               </td>
               <td>
-                <%= link_to "Edit", edit_post_path(post) %>
+                <%= link_to "Edit", edit_post_path(post), id: "post_#{post.id}" %>
               </td>
             </tr>
           <% end %>

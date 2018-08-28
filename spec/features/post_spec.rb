@@ -62,9 +62,10 @@ describe 'navigate' do
         @post = create(:post)
         visit posts_path
       end
-
+      
       it "can be reached by clickin edit" do
-        click_link "Edit"
+
+        click_link("post_#{@post.id}")
 
         expect(page.status_code).to eq(200)
       end
