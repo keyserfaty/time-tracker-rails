@@ -12,4 +12,11 @@ describe 'navigate' do
       expect(page).to have_content(/Posts/)
     end
   end
+
+  describe 'creation' do
+    it 'has a form that can be reached' do
+      visit new_post_path # this is coming from the name of the routes
+      expect(page.status_code).to eq(200)
+    end
+  end
 end

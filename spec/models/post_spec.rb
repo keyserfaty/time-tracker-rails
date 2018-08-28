@@ -17,11 +17,4 @@ RSpec.describe Post, type: :model do
       expect(@post).to_not be_valid
     end
   end
-
-  describe 'creation' do
-    it 'has a form that can be reached' do
-      visit new_post_path # this is coming from the name of the routes
-      expect(page.status_code).to eq(200)
-    end
-  end
 end
