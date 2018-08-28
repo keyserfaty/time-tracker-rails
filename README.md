@@ -20,3 +20,11 @@ Bootstrap -> formatting
 
 ### Run tests
 `rspec`
+
+
+
+### Notes:
+- Run after adding things to seeds to make a fresh start of the db:
+
+`bundle exec rake db:setup`
+
