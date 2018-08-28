@@ -31,6 +31,7 @@ class PostsController < ApplicationController
       redirect_to @post, notice: 'Your post was updated succesfully' # just like that redirects the the view of the post just created
     else
       render :edit
+    end
   end
 
   private
