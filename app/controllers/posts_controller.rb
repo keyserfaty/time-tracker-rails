@@ -30,7 +30,7 @@ class PostsController < ApplicationController
     if @post.update(post_params)
       redirect_to @post, notice: 'Your post was updated succesfully' # just like that redirects the the view of the post just created
     else
-      render :edit
+      render :edit # this variables stand for the views itselfs
     end
   end
 

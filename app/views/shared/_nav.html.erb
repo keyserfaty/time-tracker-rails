@@ -9,4 +9,9 @@
       <%= link_to "Time entries", posts_path %>
     </a>
   </li>
+  <li>
+  <a class="nav-link <%= active?(new_post_path) %>" href="#">
+      <%= link_to  "Create new", new_post_path  %>
+    </a>
+  </li>
 </ul>

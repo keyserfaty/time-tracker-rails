@@ -22,11 +22,19 @@ describe 'navigate' do
     it 'has a list of posts' do
       post1 = create(:post)
       post2 = create(:post_2)
-      p post1
       
       visit posts_path
 
       expect(page).to have_content(/Some content|Some other content/)
+    end
+  end
+
+  describe 'root' do
+    it 'has a creation button' do
+      visit root_path
+      click_on "Create new"
+
+      expect(page).to have_content("Create")
     end
   end
 
