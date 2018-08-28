@@ -11,7 +11,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params) # it's checking the content to avoid injection
-    @post.user_id = current_user[:id]
+    @post.user_id = current_user.id
 
     if @post.save # saves to the db
       redirect_to @post, notice: 'Your post was created succesfully' # just like that redirects the the view of the post just created
