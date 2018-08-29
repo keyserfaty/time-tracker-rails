@@ -1,24 +1,17 @@
 <h1>Post</h1>
 
 <%= form_for @post do |f| %>
-<div class='form-group'>
-  <%= f.label :date, class: 'col-sm-2 control-label' %>
-  <%= f.date_field :date, class: 'form-control' %>
-</div>
-<div class='form-group'>
-  <%= f.label :rationale, class: 'col-sm-2 control-label' %>
-  <%= f.text_area :rationale, class: 'form-control' %>
-</div>
-<div class='form-group'>
-  <%= f.label :status, 'Submitted' %>
-  <%= f.radio_button :status, 'submitted' %>
+  <div class='form-group'>
+    <%= f.label :date, class: 'col-sm-2 control-label' %>
+    <%= f.date_field :date, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :rationale, class: 'col-sm-2 control-label' %>
+    <%= f.text_area :rationale, class: 'form-control' %>
+  </div>
 
-  <%= f.label :status, 'Approved' %>
-  <%= f.radio_button :status, 'approved' %>
-  
-  <%= f.label :status, 'Rejected' %>
-  <%= f.radio_button :status, 'rejected' %>
-</div>
-<%= f.submit 'Save' %>
+  <%= render partial: "status", locals: { f: f } if current_user.type == 'AdminUser'  %>
+
+  <%= f.submit 'Save' %>
 
 <% end %>

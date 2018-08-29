@@ -19,6 +19,6 @@ FactoryBot.define do
     password { 'asdfgh' }
     password_confirmation { 'asdfgh' }
     type { 'AdminUser' }
-    id { 1 }
+    id { 2 }
   end
 end

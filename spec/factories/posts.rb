@@ -10,4 +10,10 @@ FactoryBot.define do
     rationale  { "Some other content" }
     user_id { 1 }
   end
+
+  factory :post_3, class: Post do
+    date { Date.yesterday }
+    rationale  { "Some other content" }
+    user_id { 2 }
+  end
 end
