@@ -5,12 +5,9 @@ namespace :notification do
     # iterate over all employees 
     # skip adminusers
     # send a msg that has instructions and a link
-    def set_msg (user) 
-      "Hi #{user.first_name}, please click this link:"
-    end
 
     User.all.each do |user| 
-      SmsTool.send_sms(user.phone_num, set_msg(user))
+      SmsTool.send_sms(user.phone_num)
     end
   end
 
