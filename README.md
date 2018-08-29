@@ -10,12 +10,12 @@ x AdminUser -> STI
 ## Features:
 - Approval Workflow.
 - SMS Sending -> link to appoval or overtime input.
-- Administrate admin dashboard.
+x Administrate admin dashboard.
 - Email summary to managers for approval.
 - Needs to be documented if employee did not log overtime.
 
 ## UI:
-Bootstrap -> formatting
+x Bootstrap -> formatting
 
 
 ### Run tests
