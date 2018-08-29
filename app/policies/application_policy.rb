@@ -34,6 +34,10 @@ class ApplicationPolicy
     false
   end
 
+  def admin_types
+    %w(AdminUser)
+  end
+
   class Scope
     attr_reader :user, :scope
 
