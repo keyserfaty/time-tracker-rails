@@ -4,15 +4,19 @@ This is me testing how to do a big app in rails.
 
 ## Models:
 x Post -> date:date rationale:text
+
 x User -> Devise
+
 x AdminUser -> STI
 
 ## Features:
 x Approval Workflow.
+
 x SMS Sending -> link to appoval or overtime input.
+
 x Administrate admin dashboard.
+
 - Email summary to managers for approval.
-- Needs to be documented if employee did not log overtime.
 
 ## UI:
 x Bootstrap -> formatting
