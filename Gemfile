@@ -37,3 +37,5 @@ gem "factory_bot_rails", "~> 4.11"
 gem "administrate", "~> 0.10.0"
 gem "pundit", "~> 2.0"
 gem "twilio-ruby", "~> 5.12"
+
+gem "dotenv-rails", "~> 2.5"
