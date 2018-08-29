@@ -21,4 +21,13 @@ FactoryBot.define do
     type { 'AdminUser' }
     id { 2 }
   end
+
+  factory :non_auth_user, class: User do
+    first_name { "Non" }
+    last_name { "Auth" }
+    email { generate(:email) }
+    password { 'asdfgh' }
+    password_confirmation { 'asdfgh' }
+    id { 3 }
+  end
 end
