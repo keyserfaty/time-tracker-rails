@@ -18,6 +18,7 @@ FactoryBot.define do
     email { generate(:email) }
     password { 'asdfgh' }
     password_confirmation { 'asdfgh' }
+    type { 'AdminUser' }
     id { 2 }
   end
 end

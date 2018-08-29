@@ -6,9 +6,7 @@
 # you're free to overwrite the RESTful controller actions.
 module Admin
   def self.admin_types
-    %w(
-      AdminUser,
-    )
+    %w(AdminUser)
   end
   
 
